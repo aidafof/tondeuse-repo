@@ -26,10 +26,7 @@ class BoundaryTest {
     void isOutOfBounds_shouldReturnFalse_When_coordinates_inside(Integer x_st, Integer y_st) {
 
         // GIVEN
-        /*int x = x_st;
-        int y = y_st;*/
         Boundary boundary = new Boundary(0, 10, 0, 10);
-
         //ASSERT
         assertFalse(boundary.isOutOfBounds(x_st, y_st));
     }

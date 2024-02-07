@@ -38,9 +38,9 @@ public class Mower {
     }
 
     /**
-     * start processing sequentially of instructions from the
+     * start sequential processing of the instructions queue
      * @param lawnBoundary : lawn boudaries constraints
-     * @throws BusinessException
+     * @throws BusinessException  raised
      */
     public void startInstructionSequence(Boundary lawnBoundary) throws BusinessException {
         while (!instructionsQueue.isEmpty()) {
@@ -53,7 +53,7 @@ public class Mower {
      * Execute a single instruction : update position and orientation
      * @param instruction : instruction to execute
      * @param boundary : lawn boundary constraints
-     * @throws BusinessException
+     * @throws BusinessException raised
      */
      private void executeInstruction(Instruction instruction, Boundary boundary) throws BusinessException {
         switch (instruction.getCode()) {
@@ -66,7 +66,7 @@ public class Mower {
     /**
      * Update position value based on orientation and boundaries
      * @param boundary : lawn boundary constraints
-     * @throws BusinessException
+     * @throws BusinessException raised
      */
     private void moveForward( Boundary boundary) throws BusinessException {
         Position nextPosition = null;

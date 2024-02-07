@@ -1,6 +1,5 @@
 package com.mowitnow.model;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -14,7 +13,6 @@ public enum Orientation {
     S("South"),
     W("West");
 
-    //private char code;
     private String label;
 
     Orientation(String pLabel) {

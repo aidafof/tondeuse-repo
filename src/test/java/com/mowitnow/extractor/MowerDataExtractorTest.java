@@ -42,9 +42,6 @@ import static org.mockito.Mockito.when;
         FileContentReader mockFileReader = mock(FileContentReader.class);
         DataExtractor mowerDataExtractor = new MowerDataExtractor(mockFileReader);
 
-        //THEN action
-        //List<String> result = mowerDataExtractor.extractData(inputFileName);
-
         //THEN and ASSERT
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             mowerDataExtractor.extractData(inputFileName);
@@ -59,10 +56,7 @@ import static org.mockito.Mockito.when;
         DataExtractor mowerDataExtractor = new MowerDataExtractor(mowerFileReader);
         String inputEmptyFile = "empty_mower_file.txt";
 
-        //THEN action
-        //List<String> result = mowerDataExtractor.extractData(inputFileName);
-
-        //THHENN and ASSERT
+        //THHEN and ASSERT
         Assertions.assertThrows(IOException.class, () -> {
             mowerDataExtractor.extractData(inputEmptyFile);
         });

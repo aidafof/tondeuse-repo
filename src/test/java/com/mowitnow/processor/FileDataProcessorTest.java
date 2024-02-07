@@ -42,9 +42,7 @@ class FileDataProcessorTest {
     })
     void process_ParameterizedTest_when_invalid_input_file(String inputLines, String outputLines) throws BusinessException {
         //GIVEN
-        /*List<String> expectedResult = Arrays.stream(outputLines.split(COMMA_SEPARATOR))
-                .map(String::trim)
-                .toList();*/
+
         String expectedResult = outputLines.replace(COMMA_SEPARATOR, System.lineSeparator());
 
         //inputLines conversion a list of strings
