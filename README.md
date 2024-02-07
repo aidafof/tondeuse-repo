@@ -22,7 +22,7 @@ different data source (file, or in the future daatbase or web service...)
 here again the dataProcessor interface is flexibility to allow transformation of multiple type of data source.
 FileDataProcessor is a custom processor adapted to the data provided in our input mower file
 *  **Exception**: classes to handle  the possible business exceptions thrown during the procesess
-some runtime exceptions (like IllegalArgumentException) are just re thrown with friendly messages
+Runtime exception are just re thrown with more friendly messages
 * **Model** : the business data model of the application 
 * **Service** : 2 concrete classes :
     LawnMowerService calls the dataProcessor 
